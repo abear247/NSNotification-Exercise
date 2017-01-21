@@ -18,6 +18,7 @@
 
 -(void)viewDidLoad{
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notified:) name:@"stepped" object:nil];
+   
 }
 
 

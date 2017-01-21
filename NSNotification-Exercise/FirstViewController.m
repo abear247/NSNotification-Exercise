@@ -20,14 +20,16 @@
 
 
 -(void)viewDidDisappear:(BOOL)animated{
+    NSNumber *stepValue = [NSNumber numberWithFloat:self.stepper.value];
+    self.notificationDictionary = @{@"stepperValue" : stepValue};
     NSNotificationCenter *notificationcenter = [NSNotificationCenter defaultCenter];
     NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:self userInfo:self.notificationDictionary];
     [notificationcenter postNotification:tapped];
+    
 }
 
 - (IBAction)stepperTapped:(id)sender {
-    NSNumber *stepValue = [NSNumber numberWithFloat:self.stepper.value];
-    self.notificationDictionary = @{@"stepperValue" : stepValue};
+  
     NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:self userInfo:self.notificationDictionary];
     [[NSNotificationCenter defaultCenter] postNotification:tapped];
     
