@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  thirdView.h
 //  NSNotification-Exercise
 //
 //  Created by Alex Bearinger on 2017-01-21.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-@property NSDictionary *notificationDictionary;
-
+@interface thirdView : UIView
 
 @end
-

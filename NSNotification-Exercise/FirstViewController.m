@@ -16,13 +16,21 @@
 
 @implementation FirstViewController
 
+
+-(instancetype)init{
+    self = [super init];
+    if (self)
+        _notificationDictionary = [NSDictionary new];
+    return self;
+}
+
 - (IBAction)stepperTapped:(id)sender {
     NSNumber *stepValue = [NSNumber numberWithFloat:self.stepper.value];
-    NSDictionary *dictionary = [NSDictionary new];
-    dictionary = @{@"stepperValue" : stepValue};
+    self.notificationDictionary = @{@"stepperValue" : stepValue};
     NSNotificationCenter *notificationcenter = [NSNotificationCenter defaultCenter];
-    NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:sender userInfo:dictionary];
+    NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:self userInfo:self.notificationDictionary];
     [notificationcenter postNotification:tapped];
+    
 }
 
 
