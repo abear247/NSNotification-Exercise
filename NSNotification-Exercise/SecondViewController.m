@@ -15,10 +15,11 @@
 
 @implementation SecondViewController
 
+
 -(void)viewDidLoad{
-    self.countLabel.text = [NSString stringWithFormat:@"%d", 0];
-      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notified:) name:@"stepped" object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notified:) name:@"stepped" object:nil];
 }
+
 
 
 

@@ -17,7 +17,6 @@
 		C8EB2E961E33EEB500D9AC6B /* NSNotification_ExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EB2E951E33EEB500D9AC6B /* NSNotification_ExerciseTests.m */; };
 		C8EB2EA11E33EEB500D9AC6B /* NSNotification_ExerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EB2EA01E33EEB500D9AC6B /* NSNotification_ExerciseUITests.m */; };
 		C8EB2EB01E340F3600D9AC6B /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EB2EAF1E340F3600D9AC6B /* ThirdViewController.m */; };
-		C8EB2EB31E34101600D9AC6B /* thirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EB2EB21E34101600D9AC6B /* thirdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +57,6 @@
 		C8EB2EA21E33EEB500D9AC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8EB2EAE1E340F3600D9AC6B /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		C8EB2EAF1E340F3600D9AC6B /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		C8EB2EB11E34101600D9AC6B /* thirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdView.h; sourceTree = "<group>"; };
-		C8EB2EB21E34101600D9AC6B /* thirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +115,6 @@
 				C8EB2E821E33EEB500D9AC6B /* SecondViewController.m */,
 				C8EB2EAE1E340F3600D9AC6B /* ThirdViewController.h */,
 				C8EB2EAF1E340F3600D9AC6B /* ThirdViewController.m */,
-				C8EB2EB11E34101600D9AC6B /* thirdView.h */,
-				C8EB2EB21E34101600D9AC6B /* thirdView.m */,
 				C8EB2E841E33EEB500D9AC6B /* Main.storyboard */,
 				C8EB2E871E33EEB500D9AC6B /* Assets.xcassets */,
 				C8EB2E891E33EEB500D9AC6B /* LaunchScreen.storyboard */,
@@ -292,7 +287,6 @@
 				C8EB2EB01E340F3600D9AC6B /* ThirdViewController.m in Sources */,
 				C8EB2E7D1E33EEB500D9AC6B /* AppDelegate.m in Sources */,
 				C8EB2E801E33EEB500D9AC6B /* FirstViewController.m in Sources */,
-				C8EB2EB31E34101600D9AC6B /* thirdView.m in Sources */,
 				C8EB2E7A1E33EEB500D9AC6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

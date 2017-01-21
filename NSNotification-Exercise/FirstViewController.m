@@ -17,19 +17,19 @@
 @implementation FirstViewController
 
 
--(instancetype)init{
-    self = [super init];
-    if (self)
-        _notificationDictionary = [NSDictionary new];
-    return self;
+
+
+-(void)viewDidDisappear:(BOOL)animated{
+    NSNotificationCenter *notificationcenter = [NSNotificationCenter defaultCenter];
+    NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:self userInfo:self.notificationDictionary];
+    [notificationcenter postNotification:tapped];
 }
 
 - (IBAction)stepperTapped:(id)sender {
     NSNumber *stepValue = [NSNumber numberWithFloat:self.stepper.value];
     self.notificationDictionary = @{@"stepperValue" : stepValue};
-    NSNotificationCenter *notificationcenter = [NSNotificationCenter defaultCenter];
     NSNotification *tapped = [[NSNotification alloc] initWithName:@"stepped" object:self userInfo:self.notificationDictionary];
-    [notificationcenter postNotification:tapped];
+    [[NSNotificationCenter defaultCenter] postNotification:tapped];
     
 }
 
